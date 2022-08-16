@@ -14,7 +14,5 @@
 
 
 **Note**
-
 This project has been done as part of the *Python Project for Data Engineering* by *IBM Skills Network* course on *Coursera*.
-
 The project has been developed on the template given in the course assignment.
