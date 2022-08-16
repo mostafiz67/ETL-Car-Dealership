@@ -1,27 +1,19 @@
-
 # Import the required modules and functions
-
-
 import glob                         # this module helps in selecting files 
 import pandas as pd                 # this module helps in processing CSV files
 import xml.etree.ElementTree as ET  # this module helps in processing XML files.
 from datetime import datetime
 
 # Download Files
-
 !wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0221EN-SkillsNetwork/labs/module%206/Lab%20-%20Extract%20Transform%20Load/data/datasource.zip
 
 # Unzip Files
-
 !unzip datasource.zip -d dealership_data
 
 # Set Paths
-
 tmpfile    = "temp.tmp"               # file used to store all extracted data
 logfile    = "logfile.txt"            # all event logs will be stored in this file
 targetfile = "transformed_data.csv"   # file where transformed data is stored
-
-# Extract
 
 # CSV Extract Function
 def extract_from_csv(file_to_process):
